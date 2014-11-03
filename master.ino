@@ -4,7 +4,7 @@
 #include <nRF24L01.h>
 #include <MirfHardwareSpiDriver.h>
 
-#define PS2_DAT        4      
+#define PS2_DAT        4      //pin mando PSX
 #define PS2_CMD        3  
 #define PS2_SEL        2  
 #define PS2_CLK        5  
@@ -12,7 +12,7 @@
 #define rumble      false
 
 PS2X ps2x; 
-int Rbateria=A1;
+int Rbateria=A1;    //pin estado bateria
 boolean pad=false;                 //variables
 boolean infoLCD=false;
 boolean confi=false;
