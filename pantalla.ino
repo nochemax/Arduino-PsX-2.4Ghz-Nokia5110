@@ -193,7 +193,7 @@ void loop(){
       }
     }
 
-    if(estadomenu==4){
+    if(estadomenu>=4){
       if(pase4==false){
         myGLCD.clrScr();
         myGLCD.print("MODO 1", LEFT, 0);
