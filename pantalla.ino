@@ -1,4 +1,9 @@
 #include <LCD5110_Basic.h>
+//      SCK  - Pin 8
+//      MOSI - Pin 9
+//      DC   - Pin 10
+//      RST  - Pin 11
+//      CS   - Pin 12
 LCD5110 myGLCD(8,9,10,11,12);
 extern uint8_t MediumNumbers[];
 extern uint8_t SmallFont[];
