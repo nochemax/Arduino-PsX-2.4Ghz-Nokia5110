@@ -49,7 +49,7 @@ http://www.henningkarlsen.com/electronics/library.php?id=44
 
 
 PIEZAS 3D PARA MONTAR EL MANDO
-
+http://www.thingiverse.com/thing:526993
 
 Explicación del montaje del mando PsX 
 
