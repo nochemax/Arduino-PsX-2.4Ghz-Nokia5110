@@ -1,6 +1,6 @@
 Arduino-PsX-2.4Ghz-Nokia5110
 ============================
-
+//////########EN COSTRUCCION DISCULPEN LAS MOLESTIAS ######################\\\\\\\\\\\\\\\\\
 
 Esta versión de PsX arduino radio control, esta programado en C  
 incluye varios modo de manejos, así como selección de canales, comprobación de la batería del mando y variables para gizmo de 3 ejes digital, el control del mando influye su modalidad, en los menú de pantalla que se explicara mas abajo. Por lo que empezaremos con los materiales necesarios para montar nuestro mando psXrC 
