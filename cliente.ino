@@ -57,7 +57,7 @@ void setup(){
   delay(500);
   pinMode(pito,OUTPUT);
   myMotor1.attach(2);
-  myMotor1.attach(3);
+  myMotor2.attach(3);
   servo1.attach(4);
   servo2.attach(5);
   servo3.attach(6);
@@ -144,9 +144,6 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
      //Serial.println(velocidad);
     velocidad=min(velocidad, 255);
     velocidad=max(velocidad, 0);
-    if(velocidad>=velocidad){
-      myMotor1.write(velocidad);    
-    }
     myMotor1.write(velocidad);
   }
 
