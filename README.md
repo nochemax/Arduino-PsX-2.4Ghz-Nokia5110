@@ -25,14 +25,17 @@ MATERIALES NECESARIOS
 2 Arduinos nano V3
 1 Arduino mini pro
 1 pantalla Nokia5110 
-2 condensadores electrolítico de 10 uf
+2 condensadores de 10 uf
+3 condensador 0,33uf y 0.1uf 
 2 resistencias de 4k7
 1 altavoz pizioelectrónico 
 1 mando psx (sony 3.3v no sony 5.0v)”recomendado sony version2”
 1 modulo de radio “recomendado con antena tipo este modelo:
 4 tornillos de métrica 3 con rosca
-1 metro de cable usb 
+1 metro de cable com serial " es igual quel usb pero con mas hilos "
 1 termo retráctil 
+1 ts7809 http://pdf1.alldatasheet.net/datasheet-pdf/view/123868/TSC/TS7809BCI.html
+2 l7806 http://pdf.datasheetcatalog.com/datasheet_pdf/sgs-thomson-microelectronics/L7805CD2T_to_L7885CV.pdf
 http://www.ebay.es/itm/like/251699886656?limghlpsr=true&hlpv=2&ops=true&viphx=1&hlpht=true&lpid=115 “
 1 modulo de radio de placa el receptor no tiene por que llevarla 
 
@@ -68,7 +71,14 @@ cuarto consejo poner los cables de su color y hacerlo con cuidado requiere de so
 -Cuando este listo aremos las conexiones al arduino nano v3 máster ver el sketch máster para ver la asignación de pines ;)
 
 
--Ahora pasaremos hacer la pcb del receptor 
+-Ahora pasaremos hacer la laconexion de cables de la pantalla 5110 y la pcb del receptor 
+
+Conexion pantalla nokia5110
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+
+Montaje de la placa rceptora
+
+https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 ////////@@@@@ Queda por montar tutorial @@@@ \\\\\\\\
                       en muy poco tiempo estará listo 
@@ -90,7 +100,6 @@ https://itechnofrance.wordpress.com/2013/05/24/utilisation-du-module-nrf24l01-av
 
 bus isp
 http://tronixstuff.com/2011/05/13/tutorial-arduino-and-the-spi-bus/
-
 
 -sacaremos una ultima conexión del pin analógico A1, para la medición de la batería del mando ajustar sketch y resistencia según voltaje, recomendado 9,6 v 800ma 
 
@@ -127,7 +136,7 @@ manera :
 
 1º Montaremos la tapa.stl  a la pieza principal.stl con el tornillo y una tuerca, consejo usar algo de pegamento 
 
-/// falta por subir foto
+https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 2º Pegar visera.stl a cajanokia.stl como se ve en la siguiente imagen 
 
@@ -135,12 +144,12 @@ manera :
 
 3º Montamos la pantalla en su caja y cerramos la tapa sacando los cables de la pantalla para fuera podemos usar pegamento caliente de pistola para fijarla bien por la ranura y retirando lo sobrante  
 
- ////// falta por subir foto
+ https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 
 4º Pasaremos el cable del mando PsX por la pieza  principal.slt, pasaremos los tornillos de cogida y pondremos una tuerca para que no se salga no apretar es solo asta el siguiente paso 
 
-// falta por subir foto
+https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 5º montaremos los conectores a las cajas de los arduino pieza base.stl y realizaremos todas las soldaduras y conexiones para ya solo atornillarla a la pieza principal.stl pinchar nuestro arduino y cerrar con la tapaA.stl 
 
