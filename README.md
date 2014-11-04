@@ -7,7 +7,8 @@ incluye varios modo de manejos, así como selección de canales, comprobación d
 
 VIDEO DEL PROYECTO
 https://drive.google.com/open?id=0B7LvgUJz6H9zd2plYm96R21VcFU&authuser=0
-
+FOTO DEL PROYECTO 
+https://drive.google.com/open?id=0B7LvgUJz6H9zOUw2WWJvY0FsRFE&authuser=0
 
 tiempo realizado x
 
