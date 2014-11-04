@@ -142,8 +142,6 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
     }
     velocidad=data;
      //Serial.println(velocidad);
-    velocidad=min(velocidad, 255);
-    velocidad=max(velocidad, 0);
     myMotor1.write(velocidad);
   }
 
