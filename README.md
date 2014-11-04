@@ -74,11 +74,11 @@ cuarto consejo poner los cables de su color y hacerlo con cuidado requiere de so
 -Ahora pasaremos hacer la laconexion de cables de la pantalla 5110 y la pcb del receptor 
 
 Conexion pantalla nokia5110
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zckZIeGRGU2RSODQ&authuser=0
 
 Montaje de la placa rceptora
 
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zYUdkVmo5cjhPUkE&authuser=0
 
 ////////@@@@@ Queda por montar tutorial @@@@ \\\\\\\\
                       en muy poco tiempo estará listo 
@@ -136,37 +136,38 @@ manera :
 
 1º Montaremos la tapa.stl  a la pieza principal.stl con el tornillo y una tuerca, consejo usar algo de pegamento 
 
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zTDR3aFFYM1NIOU0&authuser=0
 
 2º Pegar visera.stl a cajanokia.stl como se ve en la siguiente imagen 
 
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zVlhnQWNZYVFvaEk&authuser=0
 
 3º Montamos la pantalla en su caja y cerramos la tapa sacando los cables de la pantalla para fuera podemos usar pegamento caliente de pistola para fijarla bien por la ranura y retirando lo sobrante  
 
- https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zS0NCTS1laTJWN3c&authuser=0
 
 
 4º Pasaremos el cable del mando PsX por la pieza  principal.slt, pasaremos los tornillos de cogida y pondremos atornillada la pieza de taco.stl a uno de los agujeros 
-https://drive.google.com/?tab=mo&authuser=0#my-drive
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zanBYUzBkdi1xWVU&authuser=0
+https://drive.google.com/open?id=0B7LvgUJz6H9zTEVkOE5QWWItUnc&authuser=0
 
 5º montaremos los conectores a las cajas de los arduino pieza base.stl y realizaremos todas las soldaduras y conexiones para ya solo atornillarla a la pieza principal.stl pinchar nuestro arduino y cerrar con la tapaA.stl 
 
-https://drive.google.com/?tab=mo&authuser=0#my-drive
-https://drive.google.com/?tab=mo&authuser=0#my-drive
-https://drive.google.com/?tab=mo&authuser=0#my-drive
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zT1ItQ25sWWdEUFE&authuser=0
+https://drive.google.com/open?id=0B7LvgUJz6H9zbERPcm12YmFKdDQ&authuser=0
+https://drive.google.com/open?id=0B7LvgUJz6H9zbm1CckdaWWoycmM&authuser=0
+https://drive.google.com/open?id=0B7LvgUJz6H9zbnpnV2FPcUhRanc&authuser=0
+
 
 6ª Motar el conector de la radio y soldarlos a los pines de arduino 
 
-https://drive.google.com/?tab=mo&authuser=0#my-drive
-https://drive.google.com/?tab=mo&authuser=0#my-drive
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zbnpnV2FPcUhRanc&authuser=0
+https://drive.google.com/open?id=0B7LvgUJz6H9zbmJjNXdHU2h4Nlk&authuser=0
+https://drive.google.com/open?id=0B7LvgUJz6H9zQlBpWnhHY1hBbHc&authuser=0
 
 7º montaremos la base de arduino atornillando al taco 
 
-https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/open?id=0B7LvgUJz6H9zVnpOTURpS1c0X28&authuser=0
 
 
 
