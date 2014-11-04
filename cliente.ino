@@ -172,7 +172,7 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
       servo2.write(sV2);    
     }
     if(sV2<=-1){
-      sV1=map(sV2, -1,-180,90,0);
+      sV2=map(sV2, -1,-180,90,0);
       servo2.write(sV2);
     }
   }
