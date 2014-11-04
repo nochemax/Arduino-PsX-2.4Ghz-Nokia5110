@@ -28,6 +28,8 @@ MATERIALES NECESARIOS
 2 condensadores de 10 uf
 3 condensador 0,33uf y 0.1uf 
 2 resistencias de 4k7
+1 resistencia de 15k
+1 resistencia de 12k
 1 altavoz pizioelectrónico 
 1 mando psx (sony 3.3v no sony 5.0v)”recomendado sony version2”
 1 modulo de radio “recomendado con antena tipo este modelo:
@@ -105,6 +107,7 @@ http://tronixstuff.com/2011/05/13/tutorial-arduino-and-the-spi-bus/
 
 tutorial arduino su divisor de tensión 
 http://arduinohome.com/wp-content/uploads/2012/10/divisorTension.png
+R1 15k R2 12k 
 - Y ya el ultimo paso para terminar con el máster por ahora ya. Que cuando conectemos la pantalla al arduino mini pro tendremos que poner 3 conexiones mas, de la siguiente manera :
 
 arduino nano  |  arduino mini pro
