@@ -140,19 +140,33 @@ https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 2º Pegar visera.stl a cajanokia.stl como se ve en la siguiente imagen 
 
-///// falta por subir foto
+https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 3º Montamos la pantalla en su caja y cerramos la tapa sacando los cables de la pantalla para fuera podemos usar pegamento caliente de pistola para fijarla bien por la ranura y retirando lo sobrante  
 
  https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 
-4º Pasaremos el cable del mando PsX por la pieza  principal.slt, pasaremos los tornillos de cogida y pondremos una tuerca para que no se salga no apretar es solo asta el siguiente paso 
-
+4º Pasaremos el cable del mando PsX por la pieza  principal.slt, pasaremos los tornillos de cogida y pondremos atornillada la pieza de taco.stl a uno de los agujeros 
+https://drive.google.com/?tab=mo&authuser=0#my-drive
 https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 5º montaremos los conectores a las cajas de los arduino pieza base.stl y realizaremos todas las soldaduras y conexiones para ya solo atornillarla a la pieza principal.stl pinchar nuestro arduino y cerrar con la tapaA.stl 
 
-//////falta por subir foto 
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+
+6ª Motar el conector de la radio y soldarlos a los pines de arduino 
+
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+https://drive.google.com/?tab=mo&authuser=0#my-drive
+
+7º montaremos la base de arduino atornillando al taco 
+
+
+
 
 
