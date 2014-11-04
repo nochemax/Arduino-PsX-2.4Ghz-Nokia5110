@@ -394,7 +394,7 @@ void padpsx (){                                  //#############################
     if(ps2x.Button(PSB_PAD_DOWN)){ // bateria  btestado
       valboton=8;                             
       valbatery = analogRead(Rbateria);
-      btestado=((valbatery*(9600/1023))/100);
+      btestado=((valbatery*(5000/1023))/100);
       Serial.write(valboton);
       Serial.write(btestado);  
       delay(150); 
