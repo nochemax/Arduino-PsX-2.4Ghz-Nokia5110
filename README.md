@@ -166,7 +166,7 @@ https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 7º montaremos la base de arduino atornillando al taco 
 
-
+https://drive.google.com/?tab=mo&authuser=0#my-drive
 
 
 
