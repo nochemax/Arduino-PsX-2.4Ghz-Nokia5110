@@ -217,7 +217,7 @@ void padpsx (){                                  //#############################
     if(a>0||a<0){ 
       dato=600; 
       Mirf.setTADDR((byte *)"clie1");    
-      Mirf.send((byte *)dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){
 
       }
@@ -237,7 +237,7 @@ void padpsx (){                                  //#############################
     if(b>0||b<0){
       dato=615; 
       Mirf.setTADDR((byte *)"clie1");    
-      Mirf.send((byte *)dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){
       }
       Serial.println(dato);
@@ -257,7 +257,7 @@ void padpsx (){                                  //#############################
     if(c>0||c<0){
       dato=630; 
       Mirf.setTADDR((byte *)"clie1");    
-      Mirf.send((byte *)dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){
       }
       ps2x.read_gamepad();
@@ -277,7 +277,7 @@ void padpsx (){                                  //#############################
     if(d>0||d<0){
       dato=645; 
       Mirf.setTADDR((byte *)"clie1");    
-      Mirf.send((byte *)dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){
       }
       ps2x.read_gamepad();
