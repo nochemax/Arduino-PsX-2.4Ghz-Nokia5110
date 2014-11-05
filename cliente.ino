@@ -152,11 +152,9 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
     sV1=data;
      //Serial.println(sV1);
     if(sV1>=1){
-      sV1=map(sV1, 1,180,90,180);
       servo1.write(sV1);    
     }
     if(sV1<=-1){
-      sV1=map(sV1, -1,-180,90,0);
       servo1.write(sV1);     
     }
   }
@@ -168,11 +166,9 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
     sV2=data;
     // Serial.println(sV2);
     if(sV2>=1){
-      sV2=map(sV2, 1,180,90,180);
       servo2.write(sV2);    
     }
     if(sV2<=-1){
-      sV2=map(sV2, -1,-180,90,0);
       servo2.write(sV2);
     }
   }
