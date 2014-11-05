@@ -152,7 +152,6 @@ void loop(){
     if(ps2x.Button(PSB_CROSS)){             
       valboton=3;                             
       Serial.write(valboton);    
-      Serial.println(dato);
       Mirf.setTADDR((byte *)"clie1");  
       Mirf.send((byte *) &dato);
       while(Mirf.isSending()){                       
@@ -267,7 +266,6 @@ void padpsx (){                                  //#############################
         distanceLY=0;
       }
       data=distanceLY;
-      Serial.println(distanceLY);
       Mirf.setTADDR((byte *)"clie1");  
       Mirf.send((byte *) &data);
       while(Mirf.isSending()){                   
