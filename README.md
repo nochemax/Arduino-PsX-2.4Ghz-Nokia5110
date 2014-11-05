@@ -10,11 +10,14 @@ https://drive.google.com/open?id=0B7LvgUJz6H9zd2plYm96R21VcFU&authuser=0
 FOTO DEL PROYECTO 
 https://drive.google.com/open?id=0B7LvgUJz6H9zOUw2WWJvY0FsRFE&authuser=0
 
-tiempo realizado x
+tiempo realizado de programacion 13 dias 
+tiempo completo X 
+¿que es lo que falta ? el diseño de la pcb recepora control de vuelo complejo flayes alas
+cosas a mejorar control ESC https://forum.sparkfun.com/viewtopic.php?f=32&t=32036
 
 lenguaje de programación C 
 
-diseño piezas 3D rediseñadas para el proyecto 
+diseño piezas 3D rediseñadas para el proyecto makerbot.com
 
 creación  new line robotic  https://www.facebook.com/newlinerobotic
 
