@@ -6,6 +6,7 @@ Esta versión de PsX arduino radio control, esta programado en C
 incluye varios modo de manejos, así como selección de canales, comprobación de la batería del mando y variables para gizmo de 3 ejes digital, el control del mando influye su modalidad, en los menú de pantalla que se explicara mas abajo. Por lo que empezaremos con los materiales necesarios para montar nuestro mando psXrC 
 
 VIDEO DEL PROYECTO
+https://www.youtube.com/watch?v=E9Vx-44nTrA&list=UUyhtpv1guHNztd32omfg2zA
 https://drive.google.com/open?id=0B7LvgUJz6H9zd2plYm96R21VcFU&authuser=0
 FOTO DEL PROYECTO 
 https://drive.google.com/open?id=0B7LvgUJz6H9zOUw2WWJvY0FsRFE&authuser=0
