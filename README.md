@@ -1,6 +1,6 @@
 Arduino-PsX-2.4Ghz-Nokia5110
 ============================
-//////########EN COSTRUCCION DISCULPEN LAS MOLESTIAS ######################\\\\\\\\\\\\\\\\\
+
 
 Esta versión de PsX arduino radio control, esta programado en C  
 incluye varios modo de manejos, así como selección de canales, comprobación de la batería del mando y variables para gizmo de 3 ejes digital, el control del mando influye su modalidad, en los menú de pantalla que se explicara mas abajo. Por lo que empezaremos con los materiales necesarios para montar nuestro mando psXrC 
@@ -36,8 +36,8 @@ MATERIALES NECESARIOS
 1 resistencia de 12k
 1 altavoz pizioelectrónico 
 1 mando psx (sony 3.3v no sony 5.0v)”recomendado sony version2”
-1 modulo de radio “recomendado con antena tipo este modelo:
-4 tornillos de métrica 3 con rosca
+1 modulo de radio “recomendado con antena tipo este modelo:http://www.electrodragon.com/product/1000-meters-nrf24l01-long-distance-module/
+4 tornillos de métrica 1 con rosca
 1 metro de cable com serial " es igual quel usb pero con mas hilos "
 1 termo retráctil 
 1 ts7809 http://pdf1.alldatasheet.net/datasheet-pdf/view/123868/TSC/TS7809BCI.html
