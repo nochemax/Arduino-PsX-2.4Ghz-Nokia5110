@@ -141,8 +141,20 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
       Mirf.getData((byte *) &data);
     }
     velocidad=data;
-     //Serial.println(velocidad);
-    myMotor1.write(velocidad);
+     if(velocidad>=1){
+      velocidad=map(velocidad,0,255,0,2000);
+      myMotor1.write(velocidad);
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
+    } 
+    if(velocidad<=-1){
+      velocidad=map(velocidad,0,-255,0,+2000);
+      myMotor1.write(velocidad);
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
+    }  
   }
 
   if(dato==615){  // timon
@@ -150,7 +162,7 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
       Mirf.getData((byte *) &data);
     }
     sV1=data;
-    Serial.println("grados del servo timon");
+    //Serial.println("grados del servo timon");
     Serial.println(sV1);
     if(sV1>=1){
       servo1.write(sV1+89);    
@@ -201,37 +213,51 @@ void modoComplejovuelo(){
     delay(50);
   }
 
-  if(dato==12111){   //motor   
+  if(dato==630){   //motor   
     if(Mirf.dataReady()){
       Mirf.getData((byte *) &data);
     }   
     velocidad=data;
-    //Serial.println(velocidad);
-    velocidad=min(velocidad, 255);
-    velocidad=max(velocidad, 0);
-    if(velocidad>=velocidad){
-      myMotor1.write(velocidad);  
-      myMotor2.write(velocidad); 
+     if(velocidad>=1){
+      velocidad=map(velocidad,0,255,0,2000);
+      myMotor1.write(velocidad);
+       myMotor2.write(velocidad); 
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
+    } 
+    if(velocidad<=-1){
+      velocidad=map(velocidad,0,-255,0,+2000);
+      myMotor1.write(velocidad);
+       myMotor2.write(velocidad); 
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
     }
   }
 
-  if(dato==31565){  //timon  
+  if(dato==615){  // timon
     if(Mirf.dataReady()){
       Mirf.getData((byte *) &data);
     }
     sV1=data;
-     //Serial.println(sV1);
-    if(sV1<=1){
-      sV1=map(sV1, 1,180,90,180);
-      servo1.write(sV1);    
+    //Serial.println("grados del servo timon");
+    Serial.println(sV1);
+    if(sV1>=1){
+      servo1.write(sV1+89);    
+    //  Serial.println("grados del servo timon");
+    //  Serial.println(sV1);
+      delay(250);
     }
     if(sV1<=-1){
-      sV1=map(sV1, -1,-180,90,0);
-      servo1.write(sV1);  
+      servo1.write(sV1-89);     
+     // Serial.println("grados del servo timon");
+     // Serial.println(sV1);
+      delay(250);
     }
   }
 
-  if(dato==23796){   //flayer alas
+  /*if(dato==23796){   //flayer alas queda por costruir 
     if(Mirf.dataReady()){
       Mirf.getData((byte *) &data);
     }
@@ -244,25 +270,26 @@ void modoComplejovuelo(){
     if(sV2<=-1){
       sV1=map(sV2, -1,-180,90,0);
       servo3.write(sV2);   
-      Serial.println("denro mamon3");
     }
-  }
+  }*/
 
-  if(dato==-2628){  // COLA
+  if(dato==600){   //cola
     if(Mirf.dataReady()){
       Mirf.getData((byte *) &data);  
     }
-    sV4=data;
-     //Serial.println(sV4);
-    if(sV4<=1){
-      sV4=map(sV4, 1,180,90,180);
-      servo4.write(sV4);    
+    sV2=data;
+    if(sV2>=1){
+      servo2.write(sV2+89);    
+      //Serial.println("grados del servo cola");
+      //Serial.println(sV2+89);
+      delay(250);
     }
-    if(sV4<=-1){
-      sV4=map(sV4, -1,-180,90,0);
-      servo4.write(sV4);  
-      Serial.println(data);
-    } 
+    if(sV2<=-1){
+      servo2.write(sV2-89);     
+     // Serial.println("grados del servo cola");
+    //Serial.println(sV2-89);
+      delay(250);
+    }
   }
 
   if(dato==505){
@@ -291,31 +318,47 @@ void modoSimplecoche(){
   }
   myMotor1.write(velocidad);
 
-  if(dato==12111){    //motor   ojo entra negativo marcha atras ESC preparado para ello 
+  if(dato==12111){    //motor 
     if(Mirf.dataReady()){
       Mirf.getData((byte *) &data);
     }   
     velocidad=data;
-     //Serial.println(velocidad);
-    if(velocidad>=velocidad){
-      myMotor1.write(velocidad);  
+     if(velocidad>=1){
+      velocidad=map(velocidad,0,255,0,2000);
+      myMotor1.write(velocidad);
+       myMotor2.write(velocidad); 
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
+    } 
+    if(velocidad<=-1){
+      velocidad=map(velocidad,0,-255,0,+2000);
+      myMotor1.write(velocidad);
+       myMotor2.write(velocidad); 
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
     }
   }
 
-
-  if(dato==23796){  // direccion
+  if(dato==615){  // Direccion
     if(Mirf.dataReady()){
       Mirf.getData((byte *) &data);
     }
     sV1=data;
-     //Serial.println(sV1);
-    if(sV1<=1){
-      sV1=map(sV1, 1,180,90,180);
-      servo1.write(sV1);    
+    //Serial.println("direccion");
+    //Serial.println(sV1);
+    if(sV1>=1){
+      servo1.write(sV1+90);    
+      //Serial.println("direccion");
+      //Serial.println(sV1);
+      delay(250);
     }
     if(sV1<=-1){
-      sV1=map(sV1, -1,-180,90,0);
-      servo1.write(sV1);     
+      servo1.write(sV1-89);     
+      //Serial.println("direccion");
+      //Serial.println(sV1);
+      delay(250);
     }
   }
 }
@@ -336,33 +379,42 @@ void modoComplejocoche(){
     delay(50);
   }
 
-  if(dato==12111){   //motor
-    if(Mirf.dataReady()){
-      Mirf.getData((byte *) &data);
-    }   
-    velocidad=data;
-     Serial.println(velocidad);
-    if(velocidad>=velocidad){
-      myMotor1.write(velocidad);  
-      myMotor2.write(velocidad); 
+  velocidad=data;
+     if(velocidad>=1){
+      velocidad=map(velocidad,0,255,0,2000);
+      myMotor1.write(velocidad);
+       myMotor2.write(velocidad); 
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
+    } 
+    if(velocidad<=-1){
+      velocidad=map(velocidad,0,-255,0,+2000);
+      myMotor1.write(velocidad);
+       myMotor2.write(velocidad); 
+      //Serial.println("velocidad");
+      //Serial.println(velocidad);
+      delay(250);  
     }
-  }
 
-  if(dato==31565){  //direccion  
+  if(dato==615){  // Direccion
     if(Mirf.dataReady()){
       Mirf.getData((byte *) &data);
     }
     sV1=data;
-    // Serial.println(sV1);
-    if(sV1<=1){
-      sV1=map(sV1, 1,180,90,180);
-      servo1.write(sV1);    
-      servo2.write(sV1);  
+    //Serial.println("direccion");
+    //Serial.println(sV1);
+    if(sV1>=1){
+      servo1.write(sV1+90);    
+      //Serial.println("direccion");
+      //Serial.println(sV1);
+      delay(250);
     }
     if(sV1<=-1){
-      sV1=map(sV1, -1,-180,90,0);
-      servo1.write(sV1);  
-      servo2.write(sV1);  
+      servo1.write(sV1-89);     
+      //Serial.println("direccion");
+      //Serial.println(sV1);
+      delay(250);
     }
   }
 
