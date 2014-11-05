@@ -172,9 +172,31 @@ https://drive.google.com/open?id=0B7LvgUJz6H9zbnpnV2FPcUhRanc&authuser=0
 https://drive.google.com/open?id=0B7LvgUJz6H9zbmJjNXdHU2h4Nlk&authuser=0
 https://drive.google.com/open?id=0B7LvgUJz6H9zQlBpWnhHY1hBbHc&authuser=0
 
-7º montaremos la base de arduino atornillando al taco 
+7º montaremos la base.stl de arduino atornillando al taco.stl 
 
 https://drive.google.com/open?id=0B7LvgUJz6H9zVnpOTURpS1c0X28&authuser=0
 https://drive.google.com/open?id=0B7LvgUJz6H9zd2tLcXljSTctMUE&authuser=0
 
+8º realizamos los mismos pasos con la siguiente caja de arduino, pero sin el paso de atornillarlo yo enmi caso lo pege junto a la otra, no hace falta poner las tiras enteras solo los pines necesarios 
 
+https://drive.google.com/open?id=0B7LvgUJz6H9zd2tLcXljSTctMUE&authuser=0
+
+Y antes de que quede si recuerda hay que poner el modulo de radio 
+
+https://drive.google.com/open?id=0B7LvgUJz6H9zaHNMMHVMME9wcTA&authuser=0
+
+9º se monta la caja de la radio, pasa los cables concuidado centrala y con pegamento de contacto unas gotas en las esquinas es suficiente 
+
+https://drive.google.com/open?id=0B7LvgUJz6H9zVTYydmdMZkU1ckE&authuser=0
+
+https://drive.google.com/open?id=0B7LvgUJz6H9zSWpGVDluVllSZU0&authuser=0
+
+https://drive.google.com/open?id=0B7LvgUJz6H9zS1RJTGpUUE04LUk&authuser=0
+
+10 atornillar el porta pilas recordar tienen que ha ver dos salidas para el sudivisor
+
+https://drive.google.com/open?id=0B7LvgUJz6H9zaHNMMHVMME9wcTA&authuser=0
+
+11 montar las tapas a los arduino se a conseja pegamento de barra caliente
+
+12 Go0o0o0o0o0o0o0o!!!!!!!!!!!!
