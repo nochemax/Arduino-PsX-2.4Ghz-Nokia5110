@@ -1,9 +1,4 @@
 #include <LCD5110_Basic.h>
-//      SCK  - Pin 8
-//      MOSI - Pin 9
-//      DC   - Pin 10
-//      RST  - Pin 11
-//      CS   - Pin 12
 LCD5110 myGLCD(8,9,10,11,12);
 extern uint8_t MediumNumbers[];
 extern uint8_t SmallFont[];
@@ -16,13 +11,13 @@ char* myStrings[]={
   "CANAL1", "CANAL2", "CANAL3",
   "CANAL4", "CANAL5","CANAL6","CANAL7","CANAL8","CANAL9","CANAL10","CANAL11","CANAL12","CANAL13","CANAL14","CANAL15","CANAL16","CANAL17","CANAL18","CANAL19","CANAL20","CANAL21","CANAL22","CANAL23","CANAL23","CANAL24","CANAL25","CANAL26","CANAL27","CANAL28","CANAL29","CANAL30"};
 String x;
-boolean pase=false;
 boolean pase1=false;
 boolean pase2=false;
 boolean pase3=false;
 boolean pase4=false;
 boolean infoLCD=false;
 boolean confi=false;
+int i=0;
 int valboton;
 int btestado;
 int valx;
@@ -35,7 +30,7 @@ int boton;
 int chanel;
 void setup(){
   Serial.begin(57600);
-  delay(1000);
+  delay(500);
   myGLCD.InitLCD();
   myGLCD.setFont(MediumNumbers);
   myGLCD.setFont(SmallFont);
@@ -63,7 +58,7 @@ void loop(){
     if(boton==6){
       chanel++;
       chanel=min(chanel,31);
-      for (int i = 0; i < chanel; i++){
+      for (i = 0; i < chanel; i++){
         x=(myStrings[i]);
         delay (50);  
       }
@@ -75,7 +70,7 @@ void loop(){
     if(boton==7){
       chanel--;
       chanel=max(chanel,0);
-      for (int i = 0; i > chanel; i--){
+      for (i = i; i > chanel; i--){
         x=(myStrings[i]);
         delay (50);
       }
@@ -86,18 +81,15 @@ void loop(){
 
     if(boton==9){
       confi=true;
+      delay(1000);
       myGLCD.clrScr();
+      valboton=0;
+      myGLCD.drawBitmap(0, 0, psbn, 84, 48);  
     }
   }
 
 
   while(confi==true){ 
-
-    if(pase==false){
-      valboton=0;
-      myGLCD.drawBitmap(0, 0, psbn, 84, 48);
-      pase=true;
-    }
 
     while(Serial.available()){
       valboton=Serial.read();
@@ -111,7 +103,7 @@ void loop(){
         myGLCD.print("VUELO SPV", LEFT, 16);
         myGLCD.print("1 MOTOR 2 SERVOS", CENTER, 24);
         myGLCD.print("go0o0!!! go0o0!!", CENTER, 32);
-        delay (4000);
+        delay (1500);
         myGLCD.clrScr();
         pase1=true;  
       }
@@ -140,7 +132,7 @@ void loop(){
         myGLCD.print("VUELO MXV", LEFT, 16);
         myGLCD.print("2 MOTOR 4 SERVOS", CENTER, 24);
         myGLCD.print("go0o0!!! go0o0!!", CENTER, 32);
-        delay (4000);
+        delay (1500);
         pase2=true;  
       }
       while(pase2==true){
@@ -176,7 +168,7 @@ void loop(){
         myGLCD.print("CAR SP", LEFT, 16);
         myGLCD.print("1 MOTOR 2 SERVOS", CENTER, 24);
         myGLCD.print("go0o0!!! go0o0!!", CENTER, 32);
-        delay (4000);
+        delay (1500);
         pase3=true;  
       }
       while(pase3==true){
@@ -193,14 +185,14 @@ void loop(){
       }
     }
 
-    if(estadomenu>=4){
+    if(estadomenu==4){
       if(pase4==false){
         myGLCD.clrScr();
         myGLCD.print("MODO 1", LEFT, 0);
         myGLCD.print("CAR MX", LEFT, 16);
         myGLCD.print("2 MOTOR 2 SERVOS", CENTER, 24);
         myGLCD.print("go0o0!!! go0o0!!", CENTER, 32);
-        delay (4000);
+        delay (1500);
         pase4=true;  
       }
       while(pase4==true){
@@ -230,6 +222,8 @@ void loop(){
     }
   }
 }
+
+
 
 ///////############## abrir pestaña para ir colocando las imagenes #######################\\\\\\\\\
 
