@@ -4,7 +4,7 @@
 #include <nRF24L01.h>
 #include <MirfHardwareSpiDriver.h>
 
-#define PS2_DAT        4      //pin mando PSX
+#define PS2_DAT        4      
 #define PS2_CMD        3  
 #define PS2_SEL        2  
 #define PS2_CLK        5  
@@ -12,7 +12,7 @@
 #define rumble      false
 
 PS2X ps2x; 
-int Rbateria=A1;    //pin estado bateria
+int Rbateria=A1;
 boolean pad=false;                 //variables
 boolean infoLCD=false;
 boolean confi=false;
@@ -117,12 +117,10 @@ void loop(){
       Mirf.payload = sizeof(dato);
       Mirf.channel = canal;
       Mirf.config();
-      delay(500);
+      delay(1000);
       confi=true; 
     }  
   }
-
-
   while(confi==true){
     
     ps2x.read_gamepad(false,vibrate);
@@ -152,6 +150,7 @@ void loop(){
     if(ps2x.Button(PSB_CROSS)){             
       valboton=3;                             
       Serial.write(valboton);    
+      Serial.println(dato);
       Mirf.setTADDR((byte *)"clie1");  
       Mirf.send((byte *) &dato);
       while(Mirf.isSending()){                       
@@ -228,7 +227,7 @@ void padpsx (){                                  //#############################
       }       
       data=distanceRY;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &data);
+      Mirf.send((byte *)&data);
       while(Mirf.isSending()){                       
       }
     }
@@ -239,7 +238,6 @@ void padpsx (){                                  //#############################
       Mirf.send((byte *)&dato);
       while(Mirf.isSending()){
       }
-      Serial.println(dato);
       ps2x.read_gamepad();
       RX = map(ps2x.Analog(PSS_RX),  0, 255, 0, range2);    
       distanceRX = RX-center2; 
@@ -248,11 +246,11 @@ void padpsx (){                                  //#############################
       } 
       data=distanceRX;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &data);
+      Mirf.send((byte *)&data);
       while(Mirf.isSending()){                     
       }
     }
- 
+
     if(c>0||c<0){
       dato=630; 
       Mirf.setTADDR((byte *)"clie1");    
@@ -267,11 +265,11 @@ void padpsx (){                                  //#############################
       }
       data=distanceLY;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &data);
+      Mirf.send((byte *)&data);
       while(Mirf.isSending()){                   
       }
     }
- 
+
     if(d>0||d<0){
       dato=645; 
       Mirf.setTADDR((byte *)"clie1");    
@@ -286,39 +284,39 @@ void padpsx (){                                  //#############################
       }
       data=distanceLX;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&data);
       while(Mirf.isSending()){                       
       }
     }
- 
+
     if(ps2x.Button(PSB_L1)){
       dato=490;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                       
       }
     }
- 
+
     if(ps2x.Button(PSB_R1)){
       dato=495;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                      
       }
     }
-  
+
     if(ps2x.Button(PSB_L2)){
       dato=500;
       Mirf.setTADDR((byte *)"serv1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                       
       }
     }
-  
+
     if(ps2x.Button(PSB_R2)){
       dato=505;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                        
       }
     }
@@ -326,47 +324,47 @@ void padpsx (){                                  //#############################
     if(ps2x.Button(PSB_TRIANGLE)){
       dato=510;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                      
       }
     }
- 
+
     if(ps2x.Button(PSB_CIRCLE)){              
       dato=515;
       Mirf.setTADDR((byte *)"serv1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                       
       }
     }
- 
+
     if(ps2x.Button(PSB_CROSS)){             
       dato=525;
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                     
       }
     }
- 
+
     if(ps2x.Button(PSB_SQUARE)){             
       dato=520;  
       Mirf.setTADDR((byte *)"serv1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                     
       }
     }
- 
+
     if(ps2x.Button(PSB_START)) {        
       dato=530; 
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                           
       }
     }
-  
+
     if(ps2x.Button(PSB_SELECT)){
       dato=535; 
       Mirf.setTADDR((byte *)"clie1");  
-      Mirf.send((byte *) &dato);
+      Mirf.send((byte *)&dato);
       while(Mirf.isSending()){                       
       }
     }                                                   //funciones de indicaciones pantalla
@@ -376,7 +374,7 @@ void padpsx (){                                  //#############################
       Serial.write(valboton);
       delay(150); 
     }
-  
+
     if(ps2x.Button(PSB_PAD_RIGHT)){ 
       valboton=6;                             
       Serial.write(valboton);
@@ -392,7 +390,7 @@ void padpsx (){                                  //#############################
     if(ps2x.Button(PSB_PAD_DOWN)){ // bateria  btestado
       valboton=8;                             
       valbatery = analogRead(Rbateria);
-      btestado=((valbatery*(5000/1023))/100);
+      btestado=((valbatery*(9600/1023))/100);
       Serial.write(valboton);
       Serial.write(btestado);  
       delay(150); 
