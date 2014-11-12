@@ -62,6 +62,8 @@ http://www.henningkarlsen.com/electronics/library.php?id=44
 PIEZAS 3D PARA MONTAR EL MANDO
 http://www.thingiverse.com/thing:526993
 
+FOTOS DEL MONTAJE SIN DRIVE http://www.instructables.com/id/Arduino-PsX-24Ghz-Nokia5110/
+
 Explicación del montaje del mando PsX 
 
 Es realmente sencillo lo primero que tenemos que hacer son todas las conexiones, en el siguiente orden y empezando por el máster ya que lleva el mando PsX, y sera lo que mas tardemos junto la placa receptora, para ello dejo el tutorial el cual lo hice con algunos consejos extras. 
