@@ -8,6 +8,7 @@ incluye varios modo de manejos, así como selección de canales, comprobación d
 VIDEO DEL PROYECTO
 https://www.youtube.com/watch?v=E9Vx-44nTrA&list=UUyhtpv1guHNztd32omfg2zA
 https://drive.google.com/open?id=0B7LvgUJz6H9zd2plYm96R21VcFU&authuser=0
+https://www.youtube.com/watch?v=DuT9ahw1tAg
 FOTO DEL PROYECTO 
 https://drive.google.com/open?id=0B7LvgUJz6H9zOUw2WWJvY0FsRFE&authuser=0
 
