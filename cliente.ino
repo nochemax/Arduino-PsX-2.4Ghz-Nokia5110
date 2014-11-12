@@ -165,12 +165,14 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
       Serial.println("grados del servo timon");
       Serial.println(sV1);
       if(sV1>=1){
+        sV1=map(sV1,0,89,123,178);
         servo1.write(sV1);    
         Serial.println("grados del servo timon");
         Serial.println(sV1);
         delay(250);
       }
       if(sV1<=-1){
+        sV1=map(sV1,0,-89,123,+50);
         servo1.write(sV1);     
         Serial.println("grados del servo timon");
         Serial.println(sV1);
@@ -186,12 +188,14 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
       Serial.println("grados del servo cola");
       Serial.println(sV2);
       if(sV2>=1){
+        sV2=map(sV2,0,-89,90,30);     
         servo2.write(sV2);    
         Serial.println("grados del servo cola");
         Serial.println(sV2);
         delay(250);
       }
       if(sV2<=-1){
+        sV2=map(sV2,0,89,90,+120);
         servo2.write(sV2);     
         Serial.println("grados del servo cola");
         Serial.println(sV2);
@@ -199,13 +203,12 @@ void modoSimplevuelo(){ // MODO SIMPLER RECEPTOR AVION 2 SERVOS 1 MOTOR
       }
     }
     if(menu==525){
-    servo1.write(90);
-    servo2.write(90); 
-  }
-    servo1.write(sV1);
-    servo2.write(sV2);
+      servo1.write(123);
+      servo2.write(90); 
+      delay(250);
+    }
     myMotor1.write(velocidad);
-    data=0;
+  data=0;
   }
 }
 
